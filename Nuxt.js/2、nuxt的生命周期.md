@@ -1,0 +1,15 @@
+### 1、服务端生命周期
++ nuxtServerInit(stroe,context);全局管理状态库
++ middleware({store,route,redirect,params,query,req,res}){};中间件
++ validate({params,query});判断url参数
++ asyncData({store,params});在页面组件加载之前被调用，一般作为发送请求操作
++ fetch({app,store,params});
+### 2、客户端与服务端共有的生命周期
++ beforeCreate()
++ created()
+### 3、客户端
++ mounted()
++ beforeUpate()
++ update()
++ beforeDestroy()
++ destroy()
